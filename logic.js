@@ -2,7 +2,7 @@ let canvas;
 let canvasContext;
 let ballX = 400;
 let ballY = 300;
-let ballSpeedX = -10;
+let ballSpeedX = -12;
 let ballSpeedY = -6;
 let padH = 200;
 let bPadY = 250;
