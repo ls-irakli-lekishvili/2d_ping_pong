@@ -2,9 +2,9 @@ let canvas;
 let canvasContext;
 let ballX = 400;
 let ballY = 300;
-let ballSpeedX = -5;
-let ballSpeedY = -3;
-let padH = 150;
+let ballSpeedX = -10;
+let ballSpeedY = -6;
+let padH = 200;
 let bPadY = 250;
 let pPadY = 250;
 let playerScore = 0;
@@ -28,7 +28,7 @@ window.onload = function(){
     setInterval(function(){
         draw();
         move();
-    },15);
+    },10);
 
     canvas.addEventListener("mousemove", function(evt){
         let mousePos = calculateMousePos(evt);
@@ -50,9 +50,9 @@ function ballReset(){
 
 function AI(){
     if (ballY+20 < bPadY + padH / 2)
-        bPadY -= 3;
+        bPadY -= 5;
     else if(ballY-20 > bPadY + padH /2)
-        bPadY += 3;
+        bPadY += 5;
 }
 
 function move(){
