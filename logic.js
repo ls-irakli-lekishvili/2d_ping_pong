@@ -2,7 +2,7 @@ let canvas;
 let canvasContext;
 let ballX = 400;
 let ballY = 300;
-let ballSpeedX = -55;
+let ballSpeedX = -5;
 let ballSpeedY = -3;
 let padH = 150;
 let bPadY = 250;
@@ -28,7 +28,7 @@ window.onload = function(){
     setInterval(function(){
         draw();
         move();
-    },5);
+    },15);
 
     canvas.addEventListener("mousemove", function(evt){
         let mousePos = calculateMousePos(evt);
