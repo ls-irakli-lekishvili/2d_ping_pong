@@ -2,7 +2,7 @@ let canvas;
 let canvasContext;
 let ballX = 400;
 let ballY = 300;
-let ballSpeedX = -12;
+let ballSpeedX = -9;
 let ballSpeedY = -6;
 let padH = 200;
 let bPadY = 250;
@@ -50,9 +50,9 @@ function ballReset(){
 
 function AI(){
     if (ballY+20 < bPadY + padH / 2)
-        bPadY -= 5;
+        bPadY -= 4;
     else if(ballY-20 > bPadY + padH /2)
-        bPadY += 5;
+        bPadY +=4;
 }
 
 function move(){
